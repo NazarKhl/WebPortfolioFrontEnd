@@ -1,56 +1,62 @@
-## Dokumentacja Task Manager
+## Dokumentacja panelu sterowania finansami
 
 ### Opis:
 
-Task Manager to aplikacja React.js, która pozwala użytkownikom efektywnie zarządzać swoimi zadaniami. Zawiera funkcje takie jak dodawanie, usuwanie, edytowanie zadań, oznaczanie ich jako ukończonych i wizualizacja postępu zadań za pomocą wykresów.
+Ten projekt to prosty pulpit finansowy do śledzenia wydatków. Posiada przyjazny dla użytkownika interfejs ze stroną główną do dodawania wydatków oraz stroną statystyczną wyświetlającą wykres kołowy wydatków.
 
 ### Cechy:
 
-Dodaj zadania: Użytkownicy mogą dodawać nowe zadania wraz z opisem.
+Dodaj wydatki: Użytkownicy mogą wprowadzać opisy i kwoty wydatków.
 
-Usuń zadania: usuwanie zadań z listy.
+Wyświetlanie wydatków: wszystkie wydatki są wyświetlane w formie listy.
 
-Przełącz zakończenie: oznaczaj zadania jako ukończone lub aktywne za pomocą pól wyboru.
+Usuń wydatki: Użytkownicy mogą usuwać wydatki z listy.
 
-Filtr zadań: wyświetl wszystkie, aktywne lub ukończone zadania.
+Pamięć trwała: wykorzystuje pamięć lokalną, aby zaoszczędzić obciążenie między sesjami.
 
-Sortuj zadania: Sortuj zadania alfabetycznie w kolejności rosnącej lub malejącej.
+Strona statystyk: wyświetla wykres kosztów za pomocą Chart.js.
 
-Tabela wykonania zadań: wizualizuj liczbę ukończonych zadań dziennie.
+### Pliki: 
 
-### Składniki
+indeks.html
+Strona główna, na której użytkownicy mogą dodawać i przeglądać wydatki.
 
-App.js: Główny komponent zarządzający stanem i logiką.
+statystyki.html
+Wyświetla wykres kosztów. Używa Chart.js do reprezentacji wizualnej.
 
-TaskList.js: Renderuje listę zadań.
+style.css
+Zawiera style dla całego projektu. Wykorzystuje ciemny motyw z nowoczesnym designem.
 
-TaskItem.js: reprezentuje pojedyncze zadanie z kontrolkami.
+skrypt.js
+Obsługuje funkcje dodawania, wyświetlania i usuwania kosztów.
 
-AddTaskForm.js: Formularz dodawania nowych zadań.
+wykresy.js
+Renderuje wykres kołowy kosztów przy użyciu danych z localStorage.
 
-FilterControls.js: Elementy sterujące do zadań filtrowania i sortowania.
+### Jak używać:
 
-TaskChart.js: Wyświetla wykres liniowy ukończonych zadań.
+Dodaj koszty:
 
-### Wylorzystanie:
-Dodawanie zadania: Wprowadź opis zadania w polu wejściowym i kliknij Dodaj zadanie.
+Wprowadź opis i kwotę dodatnią.
 
-Usuń zadanie: Kliknij przycisk Usuń obok zadania.
+Kliknij Dodaj wydatek, aby go zapisać.
 
-Oznacz jako ukończone: Użyj tego pola wyboru, aby oznaczyć zadania jako ukończone.
+Zobacz koszty:
 
-Filtrowanie i sortowanie: Użyj przycisków filtrów, aby przełączać widoki, a przycisków sortowania, aby zmienić kolejność.
+Dodane koszty są wyświetlane na liście poniżej pól wejściowych.
 
-Widok wykresu: Wykres jest automatycznie aktualizowany, aby odzwierciedlić ukończone zadania.
+Usuń koszty:
 
+Kliknij przycisk Usuń obok wydatku, aby go usunąć.
 
-### Zależności:
-React.js: biblioteka frontendowa do tworzenia interfejsów użytkownika.
+Zobacz statystyki:
 
-Chart.js: Biblioteka do tworzenia wykresów.
+Przejdź do strony Statystyki, aby zobaczyć wykres swoich wydatków.
 
-React Chart.js 2: Opakowanie React dla Chart.js.
+### Stos technologii:
 
-### Local Storage:
+HTML/CSS
 
-Zadania są przechowywane w localStorage, aby zachować trwałość danych między sesjami.
+JavaScript
+
+Chart.js do wizualizacji danych
