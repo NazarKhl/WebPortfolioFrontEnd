@@ -1,4 +1,4 @@
-## 3) Dokumentacja Task Manager
+## Dokumentacja Task Manager
 
 ### Opis:
 
