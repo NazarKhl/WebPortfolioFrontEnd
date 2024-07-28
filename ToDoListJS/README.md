@@ -1,4 +1,4 @@
- Dokumentacja ToDo App przy użyciu localStorage
+## Dokumentacja ToDo App przy użyciu localStorage
    
 ### Opis:
 
