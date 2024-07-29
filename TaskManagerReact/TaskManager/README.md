@@ -32,7 +32,7 @@ FilterControls.js: Elementy sterujące do zadań filtrowania i sortowania.
 
 TaskChart.js: Wyświetla wykres liniowy ukończonych zadań.
 
-### Wylorzystanie:
+### Wykorzystanie:
 Dodawanie zadania: Wprowadź opis zadania w polu wejściowym i kliknij Dodaj zadanie.
 
 Usuń zadanie: Kliknij przycisk Usuń obok zadania.
