@@ -1,162 +1,161 @@
-# Dokumentacja do projektów
-## 1) Dokumentacja ToDo App przy użyciu localStorage
+# Documentation for projects
+## 1) ToDo App documentation using localStorage
    
-### Opis:
+### Description:
 
-Ten projekt tworzy prostą listę zadań do wykonania z możliwością dodawania, usuwania i oznaczania zadań jako wykonanych. Dane są przechowywane w localStorage w celu zapisywania zadań pomiędzy sesjami.
+This project creates a simple to-do list with the ability to add, remove, and mark tasks as completed. Data is stored in localStorage to save tasks between sessions.
 
-### Pliki projektu:
+### Project files:
 
-indeks.html
-Struktura strony: zawiera nagłówek, pole wejściowe, przycisk dodawania i listę zadań.
+index.html
+Page structure: contains a header, an input field, an add button and a task list.
 style.css
-Stylizacja: Zaprojektowanie strony pod kątem przyjemnego wyglądu przy użyciu kolorów, czcionek i wcięć.
-skrypt.js
+Styling: Designing the page to look pleasing using colors, fonts, and indents.
+script.js
 
-### Główne funkcje:
+### Main functions:
 
-LoadTasks(): Ładuje zadania z localStorage podczas ładowania strony.
+LoadTasks(): Loads tasks from localStorage when the page loads.
 
-addTask(): Dodaje nowe zadanie do listy i przechowuje je w localStorage.
+addTask(): Adds a new task to the list and stores it in localStorage.
 
-createTaskElement(text,complete): Tworzy element zadania HTML i dodaje go do listy.
+createTaskElement(text,complete): Creates an HTML task element and adds it to the list.
 
-toggleTaskCompleted(taskSpan): Przełącza stan zadania (ukończone/niekompletne) i aktualizuje localStorage.
+toggleTaskCompleted(taskSpan): Toggles the task status (completed/incomplete) and updates localStorage.
 
-DeleteTask(deleteButton): Usuwa zadanie z DOM i localStorage.
+DeleteTask(deleteButton): Deletes a task from the DOM and localStorage.
 
-saveTask(tekst, ukończone): Zapisuje nowe zadanie w localStorage.
+saveTask(text, completed): Saves the new task to localStorage.
 
-updateTaskStorage(): aktualizuje localStorage po zmianach na liście.
+updateTaskStorage(): updates localStorage after changes in the list.
 
-Dodawanie zadania: Wpisz tekst w polu i kliknij „Dodaj zadanie”.
+Add a task: Enter text in the box and click "Add task".
 
-Ocena za ukończone: Kliknij tekst zadania, aby zmienić jego status.
+Grade Complete: Click on the task text to change its status.
 
-Usuwanie zadania: Naciśnij przycisk „✖”, aby usunąć zadanie.
+Deleting a task: Press the "✖" button to delete a task.
 
-### Cechy:
+### Characteristics:
 
-localStorage: Dane są przechowywane lokalnie, co pozwala na przywrócenie listy zadań po ponownym załadowaniu strony.
+localStorage: Data is stored locally, allowing the task list to be restored when the page is reloaded.
 
-Interaktywny interfejs: Możliwość łatwego zarządzania listą zadań za pomocą kliknięć.
+Interactive Interface: Easily manage your task list with just a few clicks.
 
-## 2) Dokumentacja panelu sterowania finansami
+## 2) Financial Control Panel Documentation
 
-### Opis:
+### Description:
 
-Ten projekt to prosty pulpit finansowy do śledzenia wydatków. Posiada przyjazny dla użytkownika interfejs ze stroną główną do dodawania wydatków oraz stroną statystyczną wyświetlającą wykres kołowy wydatków.
+This project is a simple financial dashboard to track your expenses. It has a user-friendly interface with a home page for adding expenses and a statistics page displaying a pie chart of expenses.
 
-### Cechy:
+### Characteristics:
 
-Dodaj wydatki: Użytkownicy mogą wprowadzać opisy i kwoty wydatków.
+Add expenses: Users can enter expense descriptions and amounts.
 
-Wyświetlanie wydatków: wszystkie wydatki są wyświetlane w formie listy.
+Displaying expenses: all expenses are displayed in list form.
 
-Usuń wydatki: Użytkownicy mogą usuwać wydatki z listy.
+Remove expenses: Users can remove expenses from the list.
 
-Pamięć trwała: wykorzystuje pamięć lokalną, aby zaoszczędzić obciążenie między sesjami.
+Persistent memory: uses local memory to save load between sessions.
 
-Strona statystyk: wyświetla wykres kosztów za pomocą Chart.js.
+Statistics Page: Displays a cost chart using Chart.js.
 
-### Pliki: 
+### Files: 
 
-indeks.html
-Strona główna, na której użytkownicy mogą dodawać i przeglądać wydatki.
+index.html
+Home page where users can add and view expenses.
 
-statystyki.html
-Wyświetla wykres kosztów. Używa Chart.js do reprezentacji wizualnej.
+statistics.html
+Displays a cost chart. Uses Chart.js for visual representation.
 
 style.css
-Zawiera style dla całego projektu. Wykorzystuje ciemny motyw z nowoczesnym designem.
+Contains styles for the entire project. It uses a dark theme with a modern design.
 
-skrypt.js
-Obsługuje funkcje dodawania, wyświetlania i usuwania kosztów.
+script.js
+Supports functions for adding, displaying and removing costs.
 
-wykresy.js
-Renderuje wykres kołowy kosztów przy użyciu danych z localStorage.
+charts.js
+Renders a cost pie chart using data from localStorage.
 
-### Jak używać:
+### How to use:
 
-Dodaj koszty:
+Add costs:
 
-Wprowadź opis i kwotę dodatnią.
+Enter a description and a positive amount.
 
-Kliknij Dodaj wydatek, aby go zapisać.
+Click Add expense to save it.
 
-Zobacz koszty:
+See costs:
 
-Dodane koszty są wyświetlane na liście poniżej pól wejściowych.
+The added costs are listed below the input fields.
 
-Usuń koszty:
+Remove costs:
 
-Kliknij przycisk Usuń obok wydatku, aby go usunąć.
+Click the Delete button next to an expense to remove it.
 
-Zobacz statystyki:
+See statistics:
 
-Przejdź do strony Statystyki, aby zobaczyć wykres swoich wydatków.
+Go to the Insights page to see a graph of your spending.
 
-### Stos technologii:
+### Technology stack:
 
 HTML/CSS
 
 JavaScript
 
-Chart.js do wizualizacji danych
+Chart.js for data visualization
 
-## 3) Dokumentacja Task Manager
+## 3) Task Manager Documentation
 
-### Opis:
+### Description:
 
-Task Manager to aplikacja React.js, która pozwala użytkownikom efektywnie zarządzać swoimi zadaniami. Zawiera funkcje takie jak dodawanie, usuwanie, edytowanie zadań, oznaczanie ich jako ukończonych i wizualizacja postępu zadań za pomocą wykresów.
+Task Manager is a React.js application that allows users to manage their tasks efficiently. It includes features like adding, removing, editing tasks, marking them as completed, and visualizing the progress of tasks using charts.
 
-### Cechy:
+### Features:
 
-Dodaj zadania: Użytkownicy mogą dodawać nowe zadania wraz z opisem.
+Add Tasks: Users can add new tasks along with a description.
 
-Usuń zadania: usuwanie zadań z listy.
+Delete Tasks: Remove tasks from the list.
 
-Przełącz zakończenie: oznaczaj zadania jako ukończone lub aktywne za pomocą pól wyboru.
+Toggle Completion: Mark tasks as completed or active using checkboxes.
 
-Filtr zadań: wyświetl wszystkie, aktywne lub ukończone zadania.
+Task Filter: View all, active, or completed tasks.
 
-Sortuj zadania: Sortuj zadania alfabetycznie w kolejności rosnącej lub malejącej.
+Sort Tasks: Sort tasks alphabetically in ascending or descending order.
 
-Tabela wykonania zadań: wizualizuj liczbę ukończonych zadań dziennie.
+Task Completion Table: Visualize the number of completed tasks per day.
 
-### Składniki
+### Components
 
-App.js: Główny komponent zarządzający stanem i logiką.
+App.js: The main component that manages the state and logic.
 
-TaskList.js: Renderuje listę zadań.
+TaskList.js: Renders a list of tasks.
 
-TaskItem.js: reprezentuje pojedyncze zadanie z kontrolkami.
+TaskItem.js: Represents a single task with controls.
 
-AddTaskForm.js: Formularz dodawania nowych zadań.
+AddTaskForm.js: A form to add new tasks.
 
-FilterControls.js: Elementy sterujące do zadań filtrowania i sortowania.
+FilterControls.js: Controls for filtering and sorting tasks.
 
-TaskChart.js: Wyświetla wykres liniowy ukończonych zadań.
+TaskChart.js: Displays a line chart of completed tasks.
 
-### Wykorzystanie:
-Dodawanie zadania: Wprowadź opis zadania w polu wejściowym i kliknij Dodaj zadanie.
+### Usage:
+Add a task: Enter a task description in the input field and click Add Task.
 
-Usuń zadanie: Kliknij przycisk Usuń obok zadania.
+Delete a task: Click the Delete button next to the task.
 
-Oznacz jako ukończone: Użyj tego pola wyboru, aby oznaczyć zadania jako ukończone.
+Mark as Complete: Use this checkbox to mark tasks as completed.
 
-Filtrowanie i sortowanie: Użyj przycisków filtrów, aby przełączać widoki, a przycisków sortowania, aby zmienić kolejność.
+Filtering and Sorting: Use the filter buttons to switch views and the sort buttons to change the order.
 
-Widok wykresu: Wykres jest automatycznie aktualizowany, aby odzwierciedlić ukończone zadania.
+Chart View: The chart is automatically updated to reflect completed tasks.
 
+### Dependencies:
+React.js: A frontend library for building UIs.
 
-### Zależności:
-React.js: biblioteka frontendowa do tworzenia interfejsów użytkownika.
+Chart.js: A library for creating charts.
 
-Chart.js: Biblioteka do tworzenia wykresów.
-
-React Chart.js 2: Opakowanie React dla Chart.js.
+React Chart.js 2: A React wrapper for Chart.js.
 
 ### Local Storage:
 
-Zadania są przechowywane w localStorage, aby zachować trwałość danych między sesjami.
+Tasks are stored in localStorage to maintain data persistence across sessions.
